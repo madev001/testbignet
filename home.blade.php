@@ -1,0 +1,207 @@
+
+@extends('master')
+@section('content')
+ <link rel="stylesheet" href="css/styleHome.css">
+ <div class="row  text-white " >
+<div class="col-lg-12 col-md-12 col-sm-12 bg-dark">
+<div id="carouselExampleIndicators" class="carousel slide " data-interval="2000" data-ride="carousel" >
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" >
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/BoA9WfX.jpeg" alt="premier slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/gVKtbq3.jpeg" alt="deuxiem slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/vuWCrpd.jpeg" alt="troisiem slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Précedent</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Suivant</span>
+  </a>
+</div>
+
+</div>
+
+</div>
+<div class="container-fluid">
+
+
+<div class="row">
+	<h1 class="col-lg-12 col-md-12 col-sm-12  text-center" style="font-family: Georgia, serif;">Pourquoi nous choisir ?</h1>
+    
+    <div class="pnc col-lg-4 col-md-12 col-sm-12 ">
+    	<img src="img/conseil.png" class="logo col-lg-6 col-md-4 col-sm-4" alt="Conseils">
+        
+        <div class="col-lg-6 col-md-8 col-sm-8">
+        	<h3>Conseils d’experts</h3>
+        	<p>Nos experts, dotés d’un grand savoir faire sont à votre écoute pour subvenir à tous vos besoins !</p>
+        </div>
+    	
+    </div>
+
+    <div class="pnc col-lg-4 col-md-12 col-sm-12 ">
+    	<div class="row">
+    	<img src="img/24.png" class="logo col-lg-6 col-md-4 col-sm-4" style="" alt="Conseils">
+        
+        <div class="col-lg-6 col-md-8 col-sm-8">
+        	<h3>Service 7J/7</h3>
+        	<p>Réservez en ligne en 60 secondes et planifiez votre service à domicile dès demain.</p>
+        </div>
+    	</div>
+    </div>
+
+    <div class="pnc col-lg-4 col-md-12 col-sm-12 ">
+    	<img src="img/garantie.png" class="logo col-lg-6 col-md-4 col-sm-4" style="" alt="Conseils">
+        
+        <div class="col-lg-6 col-md-8 col-sm-8">
+        	<h3>Qualité garantie</h3>
+        	<p>La qualité est au rendez vous et Le service après vente est 100% garantie !</p>
+        </div>
+    </div>
+
+   
+</div>
+</div>
+<div class="row " style="">
+
+	<div class="demande col-lg-12 col-md-12 col-sm-12 text-center text-white bg-dark"style="font-family: Georgia, serif;" >
+     <h1>Voulez-vous un devis immédiatement</h1>
+     <h4>Un Expert Big.Net ce fera plaisir de vous realiser un devis gratuit.</h4>
+		<div id="devisdiv" class="row ">
+			<div class="col-lg-12 col-md-12 col-sm-12 text-center text-dark">
+			<a id="contacter"  class="btn btn-primary " href="{{ url("/contacter") }}">Nous Contacter</a>
+			<a id="devis"  class="btn btn-success " href="{{ url("/devis") }}" >Devis Gratuit</a>
+			</div>
+
+		</div>
+		
+	</div>
+	
+</div>
+   <div class="container-fluid">
+<div class="service row ">
+  <div class="col-lg-4 col-md-12 col-sm-12 ">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4 " >
+<span ><i class="fas fa-building fa-3x " ></i></span>
+      </div>
+      <div class="col-lg-8 col-md-8 col-sm-8 text-center">
+        <h4>Nettoyage de fin de chantier</h4>
+        <a href="{{ url("/fin_de_chantier") }}"><span class="badge bg-warning">Lire la suite</span></a>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="col-lg-4 col-md-12 col-sm-12 ">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4 " >
+       
+<span ><i class="fab fa-windows fa-3x"></i></span>
+      </div>
+      <div class="col-lg-8 col-md-8 col-sm-8 text-center">
+        <h4>Nettoyage des vitres</h4>
+        <a href="{{ url("/vitres") }}"><span class="badge bg-warning">Lire la suite</span></a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-lg-4 col-md-12 col-sm-12 ">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4 " >
+     
+<span ><i class="fas fa-sort-amount-up fa-3x"></i></span>
+      </div>
+      <div class="col-lg-8 col-md-8 col-sm-8 text-center">
+        <h4>Nettoyage des escaliers</h4>
+        <a href="{{ url("/escalier") }}"><span class="badge bg-warning">Lire la suite</span></a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="col-lg-4 col-md-12 col-sm-12 ">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4 " >
+<span ><i class="fas fa-sitemap fa-3x"></i></span>
+      </div>
+      <div class="col-lg-8 col-md-8 col-sm-8 text-center">
+        <h4>Arrangement du chantier</h4>
+        <a href="{{ url("/arrangement_chantier") }}"><span class="badge bg-warning">Lire la suite</span></a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="col-lg-4 col-md-12 col-sm-12 ">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4 " >
+        
+<span ><i class="fas fa-city fa-3x"></i></span>
+      </div>
+      <div class="col-lg-8 col-md-8 col-sm-8 text-center">
+        <h4>Maisons et appartements</h4>
+         <a href="{{ url("/maison_appart") }}"><span class="badge bg-warning">Lire la suite</span></a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-lg-4 col-md-12 col-sm-12 ">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4 " >
+       
+<span ><i class="fas fa-campground fa-3x"></i></span>
+      </div>
+      <div class="col-lg-8 col-md-8 col-sm-8 text-center">
+        <h4>Nettoyage avant chape</h4>
+        <a href="{{ url("/avant_chape") }}"><span class="badge bg-warning">Lire la suite</span></a>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+@endsection
